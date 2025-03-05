@@ -88,6 +88,42 @@ Utiliza una fuente de corriente continua para generar movimiento rotatorio.
 
 ![Figura de prueba](IMAGES/ASINCRONOAC.png)
 
+## Modelo por cierre de armadura
+
+**Parte Eléctrica**  
+
+$$v_a=L_a\dot{I_a}+R_aI_a+V_b$$  
+
+**Parte Magnética**  
+
+$$T_m=(K_aK_cI_c)I_a(t)=K_tI_a(t)$$  
+
+$$V_b=K_e\omega$$  
+
+$$T_m=T_c+T_p$$  
+
+**Parte Mecánica**  
+
+$$J\frac{d^2\theta}{dt^2}+b\frac{d\theta}{dt}+k\theta=\tau(t)$$  
+
+$$L_a\frac{d}{dt}\left(\frac{J\ddot{\theta}+b\dot{\theta}+k\theta}{K_{\tau}}\right)+R_a\left(\frac{J\ddot{\theta}+b\dot{\theta}+k\theta}{K_{\tau}}\right)+K_e\dot{\theta}=v_a$$
+
+## Sensores  
+Miden:  
+-Corriente (torque)  
+-Posición  
+-Velocidad
+
+### Encoders  
+| Elemento         | Encoder Incremental                                  | Encoder Absoluto                                                             |
+|-----------------|------------------------------------------------------|----------------------------------------------------------------------------|
+| **Salida**      | Salida aumenta incrementalmente                      | Hay posiciones absolutas en una revolución                                 |
+| **Reinicialización** | Operación de retorno durante encendido           | No requiere ninguna operación de retorno ya que se sabe siempre su posición dentro de una revolución |
+| **Precio**      | Bajo                                                 | Alto                                                                       |
+| **Estructura**  | ![Encoder Incremental](IMAGES/INCREMENTAL.png)  | ![Encoder Absoluto](IMAGES/ABSOLUTO.png)                             |
+| **Adicionales** | Solamente se detectan pulsos                         | Hay un código perforado en el encoder. El más usado es Gray               |
+
+
 - **Motor paso a paso**: Se mueve en pasos discretos y es utilizado en aplicaciones de control de precisión.
 - **Motor sin escobillas (BLDC)**: Ofrece mayor eficiencia y durabilidad que los motores de escobillas tradicionales.
 
