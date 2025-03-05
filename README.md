@@ -58,14 +58,30 @@ Utiliza una fuente de corriente continua para generar movimiento rotatorio.
 
 **Motor jaula de ardilla**  
 
-![Figura de prueba](IMAGES/JAULA.png)
+![Figura de prueba](IMAGES/JAULA.png)  
+
+**Motor rotor bobinado**  
+![Figura de prueba](IMAGES/ROTORB.png)
+
+**Aplicaciones:**  
+-Bombas  
+-Sopladores de aire  
+-Cintas transportadoras  
+-Extractores de aire
 
 
+## Características de los Motores
 
+| Tipo             | Ventajas | Desventajas |
+|-----------------|----------|-------------|
+| **DC**          | - Control más simple  <br> - Driver de potencia más simple <br> - Bajo precio en bajas capacidades <br> - Alta eficiencia en aplicaciones pequeñas | - Requiere mantenimiento e inspección periódica <br> - No se usa en ambientes sucios o húmedos <br> - No se debe utilizar para aplicaciones de frenado intenso <br> - Puede sufrir desmagnetización con el tiempo |
+| **AC - Inducción** | - Poco mantenimiento <br> - Excelente resistencia al entorno <br> - Alta velocidad y alto torque <br> - Alta eficiencia en aplicaciones grandes <br> - Estructura robusta | - Baja eficiencia en aplicaciones pequeñas <br> - Poca facilidad de control comparado con el DC <br> - Puede sufrir cambios en sus características debido a temperaturas |
+| **AC - Síncrono** | - Muy poco mantenimiento <br> - Excelente resistencia al entorno <br> - Compactos y ligeros <br> - Alta eficiencia en todo tipo de aplicaciones | - Control de dificultad intermedia <br> - Se requiere un inversor o driver más potente <br> - Si no se maneja bien, puede sufrir desmagnetización con el tiempo |
 
+## Zona de operación 
 
-
-
+**Motores AC Síncronos lazo cerrado**  
+![Figura de prueba](IMAGES/AC.png)
 
 - **Motor paso a paso**: Se mueve en pasos discretos y es utilizado en aplicaciones de control de precisión.
 - **Motor sin escobillas (BLDC)**: Ofrece mayor eficiencia y durabilidad que los motores de escobillas tradicionales.
