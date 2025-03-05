@@ -130,6 +130,20 @@ Es un sensor analógico de posición angular con un rotor y un estator, cuya amp
 
 ![Resolver](IMAGES/RESOLVER.png)   
 
+### Torque  
+| Tecnología del sensor   | Resistencia Shunt | Sensor de efecto Hall |
+|-------------------------|-------------------|-----------------------|
+| **Estructura**         | ![Imagen Shunt](ruta_imagen) | ![Imagen Hall](ruta_imagen) |
+| **Coste**              | Muy bajo          | Alto                  |
+| **Linealidad en el intervalo de medición** | Muy buena | Pobre |
+| **Capacidad de medir altas corrientes** | Muy baja | Buena |
+| **Consumo de energía** | Alto | Medio |
+| **Problema de saturación** | No | Sí |
+| **Medida de corriente continua** | Sí | Sí |
+| **Medida de corriente alterna** | Sí | Sí |
+| **Rango de medidas** | 6000A | 0-1000A |
+
+
 - **Motor paso a paso**: Se mueve en pasos discretos y es utilizado en aplicaciones de control de precisión.
 - **Motor sin escobillas (BLDC)**: Ofrece mayor eficiencia y durabilidad que los motores de escobillas tradicionales.
 
