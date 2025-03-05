@@ -80,8 +80,13 @@ Utiliza una fuente de corriente continua para generar movimiento rotatorio.
 
 ## Zona de operación 
 
-**Motores AC Síncronos lazo cerrado**  
-![Figura de prueba](IMAGES/AC.png)
+**Motores AC Síncronos lazo cerrado**   
+
+![Figura de prueba](IMAGES/AC.png)  
+
+**Motores AC Asíncronos lazo cerrado**   
+
+![Figura de prueba](IMAGES/ASINCRONOAC.png)
 
 - **Motor paso a paso**: Se mueve en pasos discretos y es utilizado en aplicaciones de control de precisión.
 - **Motor sin escobillas (BLDC)**: Ofrece mayor eficiencia y durabilidad que los motores de escobillas tradicionales.
