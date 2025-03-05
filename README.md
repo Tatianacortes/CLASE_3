@@ -114,7 +114,9 @@ Miden:
 -Posición  
 -Velocidad
 
-### Encoders  
+### Posición  
+##
+#### Encoders
 | Elemento         | Encoder Incremental                                  | Encoder Absoluto                                                             |
 |-----------------|------------------------------------------------------|----------------------------------------------------------------------------|
 | **Salida**      | Salida aumenta incrementalmente                      | Hay posiciones absolutas en una revolución                                 |
@@ -123,6 +125,10 @@ Miden:
 | **Estructura**  | ![Encoder Incremental](IMAGES/INCREMENTAL.png)  | ![Encoder Absoluto](IMAGES/ABSOLUTO.png)                             |
 | **Adicionales** | Solamente se detectan pulsos                         | Hay un código perforado en el encoder. El más usado es Gray               |
 
+#### Resolver  
+Es un sensor analógico de posición angular con un rotor y un estator, cuya amplitud de señal varía según su posición relativa. Funciona de manera similar a un transformador y puede tener o no escobillas. Sus voltajes oscilan entre 2V y 40V RMS, con frecuencias de 50 Hz a 20 kHz. La relación de transformación entre el devanado primario y secundario varía entre 0.2 V/V y 1 V/V.  
+
+![Resolver](IMAGES/RESOLVER.png)   
 
 - **Motor paso a paso**: Se mueve en pasos discretos y es utilizado en aplicaciones de control de precisión.
 - **Motor sin escobillas (BLDC)**: Ofrece mayor eficiencia y durabilidad que los motores de escobillas tradicionales.
