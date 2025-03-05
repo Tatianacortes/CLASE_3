@@ -133,7 +133,7 @@ Es un sensor analógico de posición angular con un rotor y un estator, cuya amp
 ### Torque  
 | Tecnología del sensor   | Resistencia Shunt | Sensor de efecto Hall |
 |-------------------------|-------------------|-----------------------|
-| **Estructura**         | ![Imagen Shunt](ruta_imagen) | ![Imagen Hall](ruta_imagen) |
+| **Estructura**         | ![Imagen Shunt](IMAGES/SHUNT.png) | ![Imagen Hall](IMAGES/HALL.png) |
 | **Coste**              | Muy bajo          | Alto                  |
 | **Linealidad en el intervalo de medición** | Muy buena | Pobre |
 | **Capacidad de medir altas corrientes** | Muy baja | Buena |
@@ -143,54 +143,13 @@ Es un sensor analógico de posición angular con un rotor y un estator, cuya amp
 | **Medida de corriente alterna** | Sí | Sí |
 | **Rango de medidas** | 6000A | 0-1000A |
 
+### Drivers de potencia  
 
-- **Motor paso a paso**: Se mueve en pasos discretos y es utilizado en aplicaciones de control de precisión.
-- **Motor sin escobillas (BLDC)**: Ofrece mayor eficiencia y durabilidad que los motores de escobillas tradicionales.
+Un driver de potencia amplifica señales eléctricas de control para convertirlas en señales de alta potencia, permitiendo la alimentación de actuadores como motores. Cada eje requiere su propio driver y controlador. En servomotores modernos, el controlador gestiona la retroalimentación de posición y velocidad, mientras que el driver recibe la retroalimentación de corriente.  
 
-##### Motores de Combustión Interna
-Estos motores generan energía mecánica a partir de la combustión de un combustible.
-- **Motor de gasolina**: Utiliza gasolina como combustible y funciona con un ciclo de cuatro tiempos.
-- **Motor diésel**: Similar al motor de gasolina, pero con una eficiencia térmica mayor debido a la ignición por compresión.
-- **Motor rotativo (Wankel)**: Posee un diseño diferente al de los pistones tradicionales, utilizando rotores para generar movimiento.
+El control del driver se realizará mediante modulación por ancho de pulso (PWM), un estándar en la industria tanto para motores DC como AC. 
 
-##### Motores Neumáticos
-Estos motores utilizan aire comprimido para generar movimiento. Se utilizan en herramientas industriales y maquinaria neumática.
-
-##### Motores Hidráulicos
-Utilizan la presión de un fluido para generar movimiento, siendo empleados en maquinaria pesada y sistemas hidráulicos.
-
-### Ejemplos
-#### Ejemplo 1
-Un motor eléctrico de corriente continua se usa en juguetes eléctricos y ventiladores de computadoras.
-
-#### Ejemplo 2
-Un motor de combustión interna es utilizado en automóviles y motocicletas.
-
-### Ecuaciones
-$$
-P = T \cdot \omega
-$$
-Donde:
-- \( P \) es la potencia del motor.
-- \( T \) es el torque.
-- \( \omega \) es la velocidad angular.
-
-### Figuras
-![Motor eléctrico](ruta/de/la/imagen_motor.png)
-
-### Tablas
-| Tipo de Motor | Fuente de Energía | Aplicaciones |
-|--------------|-----------------|--------------|
-| Eléctrico (DC) | Batería | Juguetes, ventiladores |
-| Eléctrico (AC) | Red eléctrica | Electrodomésticos |
-| Combustión Interna | Gasolina/Diésel | Automóviles |
-| Neumático | Aire comprimido | Herramientas neumáticas |
-| Hidráulico | Fluido a presión | Maquinaria pesada |
-
-### Ejercicios
-1. Explica la diferencia entre un motor de corriente continua y un motor de corriente alterna.
-2. Describe el funcionamiento de un motor de combustión interna y menciona sus principales componentes.
-3. ¿En qué aplicaciones se usan motores neumáticos y cuáles son sus ventajas?
+![Imagen Shunt](IMAGES/PWM.png)
 
 ### Conclusiones
 Los motores desempeñan un papel fundamental en la tecnología moderna, permitiendo la automatización y el transporte en diversas industrias. Su correcta selección depende del tipo de aplicación y los requerimientos energéticos.
