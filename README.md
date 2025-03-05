@@ -55,6 +55,18 @@ Utiliza una fuente de corriente continua para generar movimiento rotatorio.
 #### Motor asíncrono  
 
 **Funcionamiento:** El motor asíncrono genera un campo magnético giratorio en el estator, que al inducir corrientes en el rotor produce fuerzas electromagnéticas. Estas corrientes generan una reacción que permite el giro del motor a una velocidad inferior a la de sincronismo.
+
+**Motor jaula de ardilla**  
+
+![Figura de prueba](IMAGES/JAULA.png)
+
+
+
+
+
+
+
+
 - **Motor paso a paso**: Se mueve en pasos discretos y es utilizado en aplicaciones de control de precisión.
 - **Motor sin escobillas (BLDC)**: Ofrece mayor eficiencia y durabilidad que los motores de escobillas tradicionales.
 
