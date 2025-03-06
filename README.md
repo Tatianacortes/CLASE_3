@@ -1,10 +1,10 @@
 # CONTROL DE MOVIMIENTO - CLASE_3
 # Motores
 
-Los motores son dispositivos diseñados para convertir energía en movimiento mecánico. Se pueden clasificar en diferentes tipos según su fuente de energía y su principio de funcionamiento.
+Los motores son dispositivos diseñados para convertir energía eléctrica en movimiento mecánico. Se pueden clasificar en diferentes tipos según su fuente de energía y su principio de funcionamiento.
 ##
 ### Servomotor
-Servo, palabra que hace referencia a que una variable se mueve hacia un valor objetivo en el dominio del tiempo, viene de la palabra latina "servos" cuyo significado es esclavo, sigue comandos de posición, velocidad o torque por medio de un sistema de control, estas mismas son las variables a controlar.  
+Servo, palabra que hace referencia a que una variable se mueve hacia un valor objetivo en el dominio del tiempo, velocidad o torque por medio de un sistema de control, estas mismas son las variables a controlar. Un servomotor es un dispositivo similar a un motor de corriente continua que tiene la capacidad de ubicarse en cualquier posición dentro de su rango de operación, y mantenerse estable en dicha posición.​
 
 Componentes
 1. Sección de comando: Controlador
